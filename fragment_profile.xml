@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cream_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Profile Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="24dp"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/person_24dp"/>
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown_light"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/emailText"
+                    android:textColor="@color/brown_light_cream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editButton"
+                    android:text="Edit Profile"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/brown_light"
+                    android:textColor="@color/cream_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Settings List -->
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Favourites -->
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/favouritesRow"/>
+
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/downloadsRow"/>
+
+            <View android:layout_height="1dp"
+                android:background="@color/brown_light_cream"
+                android:layout_marginVertical="12dp"
+                android:layout_width="match_parent"/>
+
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/languageRow"/>
+
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/locationRow"/>
+
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/subscriptionRow"/>
+
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/displayRow"/>
+
+            <View android:layout_height="1dp"
+                android:background="@color/brown_light_cream"
+                android:layout_marginVertical="12dp"
+                android:layout_width="match_parent"/>
+
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/clearCacheRow"/>
+
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/clearHistoryRow"/>
+
+            <View android:layout_height="1dp"
+                android:background="@color/brown_light_cream"
+                android:layout_marginVertical="12dp"
+                android:layout_width="match_parent"/>
+
+            <include layout="@layout/item_profile_row"
+                android:id="@+id/logoutRow"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

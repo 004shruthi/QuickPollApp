@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_background">
+
+    <!-- Greeting -->
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="26sp"
+        android:textColor="@color/brown_800"
+        android:textStyle="bold"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Subtext -->
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create and manage intelligent polls"
+        android:textSize="16sp"
+        android:textColor="@color/brown_500"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/greetingText"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Create Poll Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/createPollCard"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/brown_light"
+        app:layout_constraintTop_toBottomOf="@id/subText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Poll"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/cream_background"
+            android:layout_gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- My Polls Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/myPollsCard"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/brown_light"
+        app:layout_constraintTop_toBottomOf="@id/createPollCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/analyticsCard">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Polls"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/cream_background"
+            android:layout_gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- Analytics Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/analyticsCard"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/brown_light"
+        app:layout_constraintTop_toBottomOf="@id/createPollCard"
+        app:layout_constraintStart_toEndOf="@id/myPollsCard"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analytics"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/cream_background"
+            android:layout_gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.example.quickpollapp.ui.home.BeigeWaveView
+        android:id="@+id/beigeWave"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/myPollsCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

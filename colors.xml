@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <!-- Base Beige Backgrounds -->
+    <color name="beige_50">#FDF8F3</color>
+    <color name="beige_100">#F5E6D3</color>
+    <color name="beige_200">#EED9C4</color>
+
+    <!-- Cream Variations -->
+    <color name="cream_light">#FFF8E7</color>
+    <color name="cream_soft">#FDF1DC</color>
+
+    <!-- Brown Primary Tones -->
+    <color name="brown_300">#B08968</color>
+    <color name="brown_500">#8B5E3C</color>
+    <color name="brown_700">#5C4033</color>
+    <color name="brown_900">#3E2723</color>
+
+    <!-- Accent Depth -->
+    <color name="accent_warm">#C6A27E</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#3E2723</color>
+    <color name="text_secondary">#6D4C41</color>
+
+    <!-- White -->
+    <color name="pure_white">#FFFFFF</color>
+
+    <color name="cream_background">#F8F3ED</color>
+    <color name="beige_card">#EADFD6</color>
+    <color name="beige_card_light">#F2E8E1</color>
+    <color name="brown_800">#4E342E</color>
+    <color name="brown_light">#6D4C41</color>
+    <color name="brown_light_cream">#8D6E63</color>
+
+    <color name="brown_light_creame">#E8DED4</color>
+</resources>
